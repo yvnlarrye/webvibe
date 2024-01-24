@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+              <div class="header__inner">
+                <div class="company-signature">
+                  <a href="index.html">
+                    <img src="images/logo.png" class="logo">
+                  </a>
+                  <div class="company-name">
+                    <a href="/">webvibe</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </header>
+
+          <main class="main">
+            <form action="#" th:action="@{/orderCall}" th:object="${request}" method="post" class="feedback_form">
+                <label for="phone" class="field">Номер телефона:</label>
+                <input type="tel" th:field="*{phone}" id="phone" name="phone" required pattern="\d{11}" placeholder="Введите номер телефона">
+                <br>
+                <label for="name">Имя:</label>
+                <input type="text" th:field="*{name}" id="name" name="name" required placeholder="Введите ваше имя">
+                <br>
+                <input type="submit" value="Отправить">
+            </form>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffd700; /* жёлтый цвет текста для label */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #ffd700; /* жёлтый цвет фона для кнопки отправки */
+    color: #000; /* чёрный цвет текста для кнопки отправки */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffcc00; /* изменение цвета фона при наведении */
+}
